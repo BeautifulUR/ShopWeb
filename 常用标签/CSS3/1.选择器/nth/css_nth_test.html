@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>nth选择器</title>
+		<style>
+			/* tr:nth-child(2n){}	偶数行变色*/
+			tr:first-child{
+				background-color: #FF4400;
+			}
+			/*
+			错误用法
+			td:nth-child(6)
+			{
+				background-color: #FF4400;
+			}
+			*/
+			tr:nth-child(2){
+				background-color: #FF4400;
+			}
+			li:nth-child(1){
+				background-color: #FF4400;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="1" cellpadding="10" cellspacing="0">
+			<tr><th>Header</th></tr>
+			<tr><td>1</td></tr>
+			<tr><td>2</td></tr>
+			<tr><td>3</td></tr>
+			<tr><td>4</td></tr>
+			<tr><td>5</td></tr>
+			<tr><td>6</td></tr>
+			<tr><td>7</td></tr>
+		</table>
+		<ul>
+			<li style="height: 20px;">1</li>
+			<li style="height: 20px;">2</li>
+			<li style="height: 20px;">3</li>
+			<li style="height: 20px;">4</li>
+		</ul>
+	</body>
+</html>
+
+<!-- 
+/* nth选择器 */
+.believe-nav .believe #ulleft ul:last-child{
+	width:145.78px;
+} 
+-->
